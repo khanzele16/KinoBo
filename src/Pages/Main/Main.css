@@ -1,0 +1,538 @@
+.Main {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	padding: 15px 20px;
+	width: 1800px;
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	grid-row-gap: 10px;
+	background-color: white;
+}
+.Main-slider {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	flex-direction: row;
+	height: 400px;
+}
+.Main-new-title {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: space-between;
+	width: 1750px;
+	margin-bottom: 5px;
+}
+.Main-new-title-next {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	cursor: pointer;
+	position: relative;
+	padding: 4px 6px 4px 14px;
+	transition: all 0.3s ease;
+	border-radius: 5px;
+}
+.Main-new-title-next:hover {
+	background-color: #336cfb;
+}
+.Main-new-title-next:hover a {
+	color: white;
+}
+.Main-new-title-next:hover svg {
+	margin-left: 2px;
+	fill: white;
+}
+.Main-new-title-next a {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	transition: all 0.3s ease;
+	color: black;
+}
+.Main-new-title-next svg {
+	transition: all 0.3s ease;
+	position: relative;
+	width: 25px;
+	margin-left: 6px;
+}
+.Main-new {
+	display: flex;
+	flex-direction: column;
+}
+.Main-new h2 {
+	font-size: 35px;
+	font-weight: bold;
+}
+.Main-new-catalog {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+.Main-new-catalog li {
+	margin: 0 auto;
+	max-width: 200px;
+	max-height: 350px;
+}
+.Main-best-title {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: space-between;
+	width: 1750px;
+	margin-bottom: 5px;
+}
+.Main-best-title-next {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	cursor: pointer;
+	position: relative;
+	padding: 4px 6px 4px 14px;
+	transition: all 0.3s ease;
+	border-radius: 5px;
+	color: black;
+}
+.Main-best-title-next:hover {
+	background-color: #336cfb;
+}
+.Main-best-title-next:hover a {
+	color: white;
+}
+.Main-best-title-next:hover svg {
+	margin-left: 2px;
+	fill: white;
+}
+.Main-best-title-next p {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	transition: all 0.3s ease;
+	color: black;
+}
+.Main-best-title-next svg {
+	transition: all 0.3s ease;
+	position: relative;
+	width: 25px;
+	margin-left: 6px;
+}
+.Main-best {
+	display: flex;
+	flex-direction: column;
+}
+.Main-best h2 {
+	font-size: 35px;
+	font-weight: bold;
+}
+.Main-best-catalog {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+.Main-best-catalog li {
+	margin: 0 auto;
+	max-width: 200px;
+	max-height: 350px;
+}
+.Main-serials-title {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: space-between;
+	width: 1750px;
+	margin-bottom: 5px;
+}
+.Main-serials-title-next {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	cursor: pointer;
+	position: relative;
+	padding: 4px 6px 4px 14px;
+	transition: all 0.3s ease;
+	border-radius: 5px;
+	color: black;
+}
+.Main-serials-title-next:hover {
+	background-color: #336cfb;
+}
+.Main-serials-title-next:hover a {
+	color: white;
+}
+.Main-serials-title-next:hover svg {
+	margin-left: 4px;
+	fill: white;
+}
+.Main-serials-title-next a {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	transition: all 0.3s ease;
+	color: black;
+}
+.Main-serials-title-next svg {
+	transition: all 0.3s ease;
+	position: relative;
+	width: 25px;
+	margin-left: 8px;
+}
+.Main-serials h2 {
+	font-size: 35px;
+	font-weight: bold;
+}
+.Main-serials {
+	display: flex;
+	flex-direction: column;
+}
+.Main-serials-catalog {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+.Main-serials-catalog li {
+	margin: 0 auto;
+	max-width: 200px;
+	max-height: 350px;
+}
+.Main-error-loading {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 1760px;
+	height: 200px;
+	background-color: #eeeeee;
+	border-radius: 5px;
+}
+.Main-error-loading h3 {
+	font-family: 'Montserrat';
+	font-size: 50px;
+}
+.Main-error-loading p {
+	font-family: 'Montserrat';
+	font-size: 22px;
+	font-weight: 600;
+	color: #5f5f5f;
+}
+#empty-catalog {
+	display: flex;
+}
+@media (max-width: 1800px) {
+	.Main-new-catalog {
+		grid-template-columns: repeat(7, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+	.Main-best-catalog {
+		grid-template-columns: repeat(7, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+	.Main-serials-catalog {
+		grid-template-columns: repeat(7, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+	.Main-error-loading {
+		width: 1610px;
+	}
+	.Main-new-title {
+		width: 1610px;
+	}
+	.Main-best-title {
+		width: 1610px;
+	}
+	.Main-serials-title {
+		width: 1610px;
+	}
+}
+@media (max-width: 1650px) {
+	.Main-new-catalog {
+		grid-template-columns: repeat(6, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+	.Main-best-catalog {
+		grid-template-columns: repeat(6, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+	.Main-serials-catalog {
+		grid-template-columns: repeat(6, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+	.Main-error-loading {
+		width: 1460px;
+	}
+	.Main-new-title {
+		width: 1460px;
+	}
+	.Main-best-title {
+		width: 1460px;
+	}
+	.Main-serials-title {
+		width: 1460px;
+	}
+}
+@media (max-width: 1500px) {
+	.Main-new-catalog {
+		grid-template-columns: repeat(6, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+	.Main-best-catalog {
+		grid-template-columns: repeat(6, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+	.Main-serials-catalog {
+		grid-template-columns: repeat(6, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+	.Main-error-loading {
+		width: 1260px;
+	}
+	.Main-new-title {
+		width: 1260px;
+	}
+	.Main-best-title {
+		width: 1260px;
+	}
+	.Main-serials-title {
+		width: 1260px;
+	}
+}
+@media (max-width: 1300px) {
+	.Main-error-loading {
+		width: 1010px;
+	}
+	.Main-new-title {
+		width: 1010px;
+	}
+	.Main-best-title {
+		width: 1010px;
+	}
+	.Main-serials-title {
+		width: 1010px;
+	}
+}
+@media (max-width: 1050px) {
+	.Main-new-catalog {
+		grid-template-columns: repeat(5, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+	.Main-best-catalog {
+		grid-template-columns: repeat(5, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+	.Main-serials-catalog {
+		grid-template-columns: repeat(5, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+	.Main-error-loading {
+		width: 810px;
+	}
+	.Main-error-loading h3 {
+		font-size: 35px;
+	}
+	.Main-error-loading p {
+		font-size: 18px;
+	}
+	.Main-new-title {
+		width: 810px;
+	}
+	.Main-new-title h2 {
+		font-size: 30px;
+	}
+	.Main-best-title {
+		width: 810px;
+	}
+	.Main-best-title h2 {
+		font-size: 30px;
+	}
+	.Main-serials-title {
+		width: 810px;
+	}
+	.Main-serials-title h2 {
+		font-size: 30px;
+	}
+}
+@media (max-width: 850px) {
+	.Main-new-catalog {
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+	.Main-best-catalog {
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+	.Main-serials-catalog {
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+	.Main-error-loading {
+		width: 560px;
+		height: 180px;
+	}
+	.Main-error-loading h3 {
+		font-size: 30px;
+	}
+	.Main-error-loading p {
+		font-size: 15px;
+	}
+	.Main-new-title {
+		width: 560px;
+	}
+	.Main-new-title h2 {
+		font-size: 26px;
+	}
+	.Main-best-title {
+		width: 560px;
+	}
+	.Main-best-title h2 {
+		font-size: 26px;
+	}
+	.Main-serials-title {
+		width: 560px;
+	}
+	.Main-serials-title h2 {
+		font-size: 26px;
+	}
+}
+@media (max-width: 600px) {
+	.Main-new-catalog {
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+	.Main-best-catalog {
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+	.Main-serials-catalog {
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+	.Main-error-loading {
+		width: 410px;
+		height: 120px;
+	}
+	.Main-error-loading h3 {
+		font-size: 25px;
+	}
+	.Main-error-loading p {
+		font-size: 10px;
+	}
+	.Main-new-title {
+		width: 410px;
+	}
+	.Main-new-title h2 {
+		font-size: 22px;
+	}
+	.Main-new-title-next p {
+		font-size: 15px;
+	}
+	.Main-new-title-next svg {
+		width: 15px;
+		margin-left: 2px;
+	}
+	.Main-best-title {
+		width: 410px;
+	}
+	.Main-best-title h2 {
+		font-size: 22px;
+	}
+	.Main-best-title-next p {
+		font-size: 15px;
+	}
+	.Main-best-title-next svg {
+		width: 15px;
+		margin-left: 2px;
+	}
+	.Main-serials-title {
+		width: 410px;
+	}
+	.Main-serials-title h2 {
+		font-size: 22px;
+	}
+	.Main-serials-title-next p {
+		font-size: 15px;
+	}
+	.Main-serials-title-next svg {
+		width: 15px;
+		margin-left: 2px;
+	}
+}
+@media (max-width: 450px) {
+	.Main-error-loading {
+		width: 310px;
+		height: 100px;
+	}
+	.Main-error-loading h3 {
+		font-size: 22px;
+	}
+	.Main-error-loading p {
+		font-size: 8px;
+	}
+	.Main-new-title {
+		width: 310px;
+	}
+	.Main-new-title h2 {
+		font-size: 18px;
+	}
+	.Main-new-title-next p {
+		font-size: 12px;
+	}
+	.Main-new-title-next svg {
+		width: 12px;
+		margin-left: 0;
+	}
+	.Main-best-title {
+		width: 310px;
+	}
+	.Main-best-title h2 {
+		font-size: 18px;
+	}
+	.Main-best-title-next p {
+		font-size: 12px;
+	}
+	.Main-best-title-next svg {
+		width: 12px;
+		margin-left: 0;
+	}
+	.Main-serials-title {
+		width: 310px;
+	}
+	.Main-serials-title h2 {
+		font-size: 18px;
+	}
+	.Main-serials-title-next p {
+		font-size: 12px;
+	}
+	.Main-serials-title-next svg {
+		width: 12px;
+		margin-left: 0;
+	}
+}

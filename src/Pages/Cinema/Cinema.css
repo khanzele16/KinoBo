@@ -1,0 +1,99 @@
+.Cinema {
+	display: flex;
+	flex-direction: column;
+	width: 1800px;
+	overflow: hidden;
+	padding: 15px 20px;
+	background-color: white;
+}
+.Cinema h2 {
+	font-size: 35px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+}
+.Cinema-content {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 10px;
+	margin: 10px 0;
+	width: 1000px;
+}
+.Cinema-content li {
+	cursor: pointer;
+	background-color: black;
+	width: 340px;
+	height: 340px;
+}
+.Cinema-content li img {
+	width: 340px;
+	transition: all 0.2s ease;
+	opacity: 1;
+}
+.Cinema-content li:hover img {
+	opacity: 0.9;
+}
+@media (max-width: 1650px) {
+	.Cinema {
+		width: 1550px;
+	}
+	.Cinema-content {
+		width: 700px;
+	}
+	.Cinema-content li {
+		width: 210px;
+		height: 210px;
+	}
+	.Cinema-content li img {
+		width: 210px;
+	}
+}
+@media (max-width: 900px) {
+	.Cinema h2 {
+		font-size: 25px;
+	}
+	.Cinema-content {
+		width: 400px;
+	}
+	.Cinema-content li {
+		width: 160px;
+		height: 160px;
+	}
+	.Cinema-content li img {
+		width: 160px;
+	}
+}
+@media (max-width: 700px) {
+	.Cinema h2 {
+		font-size: 20px;
+	}
+	.Cinema-content {
+		width: 400px;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+	.Cinema-content li {
+		width: 160px;
+		height: 160px;
+	}
+	.Cinema-content li img {
+		width: 160px;
+	}
+}
+@media (max-width: 500px) {
+	.Cinema h2 {
+		font-size: 20px;
+	}
+	.Cinema-content {
+		width: 300px;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+	.Cinema-content li {
+		width: 120px;
+		height: 120px;
+	}
+	.Cinema-content li img {
+		width: 120px;
+	}
+}

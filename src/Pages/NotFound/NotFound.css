@@ -1,0 +1,72 @@
+.NotFound {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	background-color: white;
+	width: 1860px;
+	padding: 200px 0;
+}
+.NotFound img {
+	width: 300px;
+	opacity: 0.4;
+}
+.NotFound-description {
+	margin-right: 100px;
+}
+#error-banner {
+	font-weight: bold;
+	font-family: 'Montserrat';
+	font-size: 24px;
+	color: #3a3a3a;
+}
+#error {
+	font-size: 45px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	padding: 15px 0 5px 0;
+}
+@media (max-width: 1300px) {
+	#error {
+		font-size: 30px;
+	}
+	#error-banner {
+		font-size: 20px;
+	}
+	.NotFound img {
+		width: 150px;
+	}
+	.NotFound {
+		padding: 250px 0;
+	}
+}
+@media (max-width: 850px) {
+	.NotFound-description {
+		width: 200px;
+	}
+	#error {
+		font-size: 25px;
+	}
+	#error-banner {
+		font-size: 18px;
+	}
+	.NotFound img {
+		width: 150px;
+	}
+	.NotFound-description {
+		margin-right: 25px;
+	}
+}
+@media (max-width: 600px) {
+	.NotFound-description {
+		margin-right: 0;
+	}
+	.NotFound-description {
+		width: 220px;
+		word-break: break-all;
+		text-align: center;
+	}
+	.NotFound img {
+		display: none;
+	}
+}

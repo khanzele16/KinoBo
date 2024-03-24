@@ -1,0 +1,13 @@
+.Playlists {
+	display: flex;
+	flex-direction: column;
+	width: 1760px;
+	overflow: hidden;
+	padding: 15px 20px;
+	background-color: white;
+}
+.Playlists h2 {
+  font-size: 35px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}

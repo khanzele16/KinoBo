@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Mulish:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+* {
+	font-family: 'Montserrat', 'Mulish', sans-serif;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+}
+body {
+	background-color: #e7e7e7;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+	width: 6px;
+	background-color: #c4c4c4;
+}
+body::-webkit-scrollbar-thumb {
+	background-color: #608dff;
+}
+.App {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.App-content {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	max-width: 1800px;
+	margin: 0 0 100px 0;
+	position: relative;
+	top: 65px;
+	border: 1px solid #bebebe;
+}
+header {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: space-evenly;
+	flex-direction: row;
+	height: 65px;
+	width: 1800px;
+	background-color: rgb(255, 255, 255);
+	border-bottom: 1px solid #c0c0c0;
+	margin: 0 auto;
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	border: 1px solid #bebebe;
+}
+@media (max-width: 1800px) {
+	header {
+		width: 1650px;
+	}
+	.App-content {
+		max-width: 1650px;
+	}
+}
+@media (max-width: 1650px) {
+	header {
+		width: 1500px;
+	}
+	.App-content {
+		max-width: 1500px;
+	}
+}
+@media (max-width: 1500px) {
+	header {
+		width: 1300px;
+	}
+	.App-content {
+		max-width: 1300px;
+	}
+}
+@media (max-width: 1300px) {
+	header {
+		width: 1050px;
+	}
+	.App-content {
+		max-width: 1050px;
+	}
+}
+@media (max-width: 1050px) {
+	header {
+		width: 850px;
+	}
+	.App-content {
+		max-width: 850px;
+	}
+}
+@media (max-width: 850px) {
+	header {
+		width: 600px;
+	}
+	.App-content {
+		max-width: 600px;
+	}
+}
+@media (max-width: 600px) {
+	header {
+		width: 450px;
+	}
+	.App-content {
+		max-width: 450px;
+	}
+}
+@media (max-width: 450px) {
+	header {
+		width: 350px;
+	}
+	.App-content {
+		max-width: 350px;
+	}
+}
