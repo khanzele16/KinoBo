@@ -21,8 +21,9 @@
 	background-color: #dfdfdf;
 	transition: all 0.2s ease;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 17px;
 	text-align: center;
+	font-family: 'Montserrat';
 }
 .Films-sort li:hover {
 	color: white;
@@ -49,6 +50,8 @@
 	transition: all 0.2s ease;
 	cursor: pointer;
 	text-align: center;
+	font-size: 17px;
+	font-family: 'Montserrat';
 }
 .Films-category li:hover {
 	color: white;

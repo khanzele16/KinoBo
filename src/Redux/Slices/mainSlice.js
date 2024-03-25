@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const config = {
 	headers: {
-		'X-API-KEY': '6F2JDJ3-QXH46B5-JMZJV8A-CYH4YR8',
+		'X-API-KEY': 'AFD6JZ0-9J6MPZF-J69DAAS-WJ9VPMC',
 		'Access-Control-Allow-Origin': '*',
 	},
 }
@@ -66,7 +66,7 @@ const initialState = {
 	main: {
 		sliderData: {
 			data: [],
-			status: 'loading'
+			status: 'loading',
 		},
 		newData: {
 			data: [],
@@ -92,7 +92,7 @@ const mainSlice = createSlice({
 			state.main.sliderData.status = 'loading'
 		},
 		[fetchSlider.fulfilled](state, action) {
-			state.main.sliderData.data = action.payload
+			state.main.sliderData.data = action?.payload
 			state.main.sliderData.status = 'loaded'
 		},
 		[fetchSlider.rejected](state) {
@@ -104,7 +104,7 @@ const mainSlice = createSlice({
 			state.main.newData.status = 'loading'
 		},
 		[fetchNewFilms.fulfilled](state, action) {
-			state.main.newData.data = action.payload
+			state.main.newData.data = action?.payload
 			state.main.newData.status = 'loaded'
 		},
 		[fetchNewFilms.rejected](state) {
@@ -116,7 +116,7 @@ const mainSlice = createSlice({
 			state.main.bestData.status = 'loading'
 		},
 		[fetchBestFilms.fulfilled](state, action) {
-			state.main.bestData.data = action.payload
+			state.main.bestData.data = action?.payload
 			state.main.bestData.status = 'loaded'
 		},
 		[fetchBestFilms.rejected](state) {
@@ -128,7 +128,7 @@ const mainSlice = createSlice({
 			state.main.serialData.status = 'loading'
 		},
 		[fetchSerials.fulfilled](state, action) {
-			state.main.serialData.data = action.payload
+			state.main.serialData.data = action?.payload
 			state.main.serialData.status = 'loaded'
 		},
 		[fetchSerials.rejected](state) {

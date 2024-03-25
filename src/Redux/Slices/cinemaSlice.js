@@ -45,7 +45,7 @@ const cinemaSlice = createSlice({
 	initialState,
 	reducers: {
 		changePage(state, action) {
-			state.films.info.page = action.payload
+			state.films.info.page = action?.payload
 		},
 	},
 	extraReducers: {
@@ -55,8 +55,8 @@ const cinemaSlice = createSlice({
 			state.films.status = 'loading'
 		},
 		[fetchFilms.fulfilled](state, action) {
-			state.films.data = action.payload.docs
-			state.films.info.pages = action.payload.pages
+			state.films.data = action?.payload.docs
+			state.films.info.pages = action?.payload.pages
 			state.films.status = 'loaded'
 		},
 		[fetchFilms.rejected](state) {

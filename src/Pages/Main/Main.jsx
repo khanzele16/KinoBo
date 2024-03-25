@@ -16,9 +16,8 @@ const loadFilmCard = [...new Array(24)]
 const screen = window.screen.availWidth
 
 export default function Main() {
-	const screen = window.screen.availWidth
 	const dispatch = useDispatch()
-	const main = useSelector(state => state.main.main)
+	const main = useSelector(state => state.main?.main)
 	const loading = (
 		<ContentLoader
 			speed={2}
@@ -83,8 +82,10 @@ export default function Main() {
 	return (
 		<div className='Main'>
 			<ul className='Main-slider'>
-				{main.sliderData.data.map((el, index) => (
-					<li><SLPost {...el} /></li>
+				{main?.sliderData.data?.map((el, index) => (
+					<li>
+						<SLPost {...el} />
+					</li>
 				))}
 			</ul>
 			<div className='Main-new'>
@@ -110,29 +111,29 @@ export default function Main() {
 				</div>
 				<ul
 					id={
-						main.newData.status == 'loaded' &&
-						!main.newData.data &&
-						'empty-catalog'
+						main.newData?.status == 'loaded' && !main.newData?.data
+							? 'empty-catalog'
+							: ''
 					}
 					className='Main-new-catalog'
 				>
-					{main.newData.status == 'loading' &&
+					{main?.newData?.status == 'loading' &&
 						loadFilmCard.map((el, index) => <li key={index}>{loading}</li>)}
-					{main.newData.status == 'loaded' &&
-						main.newData.data?.map((el, index) => (
+					{main?.newData?.status == 'loaded' &&
+						main?.newData?.data?.map((el, index) => (
 							<NavLink to={`/film/${el.id}`} key={index}>
 								<li className='film-card'>
 									<Preview {...el} />
 								</li>
 							</NavLink>
 						))}
-					{main.newData.status == 'loaded' && !main.newData.data && (
+					{main?.newData?.status == 'loaded' && !main?.newData?.data && (
 						<div className='Main-error-loading'>
 							<h3>Ошибка 400</h3>
 							<p>Проверьте интернет-соединение. Перезагрузите страницу!</p>
 						</div>
 					)}
-					{main.newData.status == 'error' && (
+					{main?.newData?.status == 'error' && (
 						<div className='Main-error-loading'>
 							<h3>Ошибка 400</h3>
 							<p>Проверьте интернет-соединение. Перезагрузите страницу!</p>
@@ -163,29 +164,29 @@ export default function Main() {
 				</div>
 				<ul
 					id={
-						main.bestData.status == 'loaded' &&
-						!main.bestData.data &&
-						'empty-catalog'
+						main.bestData?.status == 'loaded' && !main.bestData?.data
+							? 'empty-catalog'
+							: ''
 					}
 					className='Main-best-catalog'
 				>
-					{main.bestData.status == 'loading' &&
+					{main?.bestData?.status == 'loading' &&
 						loadFilmCard.map((el, index) => <li key={index}>{loading}</li>)}
-					{main.bestData.status == 'loaded' &&
-						main.bestData.data?.map((el, index) => (
+					{main?.bestData?.status == 'loaded' &&
+						main?.bestData?.data?.map((el, index) => (
 							<NavLink to={`/film/${el.id}`} key={index}>
 								<li className='film-card'>
 									<Preview {...el} />
 								</li>
 							</NavLink>
 						))}
-					{main.bestData.status == 'loaded' && !main.bestData.data && (
+					{main?.bestData?.status == 'loaded' && !main?.bestData?.data && (
 						<div className='Main-error-loading'>
 							<h3>Ошибка 400</h3>
 							<p>Проверьте интернет-соединение. Перезагрузите страницу!</p>
 						</div>
 					)}
-					{main.bestData.status == 'error' && (
+					{main?.bestData?.status == 'error' && (
 						<div className='Main-error-loading'>
 							<h3>Ошибка 400</h3>
 							<p>Проверьте интернет-соединение. Перезагрузите страницу!</p>
@@ -214,29 +215,29 @@ export default function Main() {
 				</div>
 				<ul
 					id={
-						main.serialData.status == 'loaded' &&
-						!main.serialData.data &&
-						'empty-catalog'
+						main?.serialData?.status == 'loaded' && !main?.serialData?.data
+							? 'empty-catalog'
+							: ''
 					}
 					className='Main-serials-catalog'
 				>
-					{main.serialData.status == 'loading' &&
+					{main?.serialData?.status == 'loading' &&
 						loadFilmCard.map((el, index) => <li key={index}>{loading}</li>)}
-					{main.serialData.status == 'loaded' &&
-						main.serialData.data?.map((el, index) => (
+					{main?.serialData?.status == 'loaded' &&
+						main?.serialData?.data?.map((el, index) => (
 							<NavLink to={`/serial/${el.id}`} key={index}>
 								<li className='film-card'>
 									<Preview {...el} />
 								</li>
 							</NavLink>
 						))}
-					{main.serialData.status == 'loaded' && !main.serialData.data && (
+					{main?.serialData?.status == 'loaded' && !main?.serialData?.data && (
 						<div className='Main-error-loading'>
 							<h3>Ошибка 400</h3>
 							<p>Проверьте интернет-соединение. Перезагрузите страницу!</p>
 						</div>
 					)}
-					{main.serialData.status == 'error' && (
+					{main?.serialData?.status == 'error' && (
 						<div className='Main-error-loading'>
 							<h3>Ошибка 400</h3>
 							<p>Проверьте интернет-соединение. Перезагрузите страницу!</p>

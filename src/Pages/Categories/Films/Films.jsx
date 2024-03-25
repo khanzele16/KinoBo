@@ -208,6 +208,9 @@ function Films() {
 					page: params.page ? params.page : 1,
 				})
 			)
+			setSortContext(params.sort)
+			setCategoryContext(params.category)
+			dispatch(changePage(params.page))
 		} else {
 			dispatch(
 				fetchFilms({
@@ -216,6 +219,9 @@ function Films() {
 					page: 1,
 				})
 			)
+			setSortContext('всё')
+			setCategoryContext('rating')
+			dispatch(changePage(1))
 		}
 	}, [])
 	React.useEffect(() => {

@@ -6,14 +6,7 @@ function SPost({ ...el }) {
 	return (
 		<div className='SPost'>
 			<div className='SPost-image'>
-				<img
-					src={
-						!el.poster.previewUrl
-							? 'https://i.ibb.co/LY8zffQ/kino.jpg'
-							: el.poster.previewUrl
-					}
-					alt=''
-				/>
+				<img src={el.poster.previewUrl} alt='' />
 			</div>
 			<div className='SPost-description'>
 				<p id='spost-title'>

@@ -2,7 +2,7 @@ import React from 'react'
 import SPost from '../Posts/SPost/SPost'
 import debounce from 'lodash.debounce'
 import { useDispatch, useSelector } from 'react-redux'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { clearData, fetchSearch } from '../../Redux/Slices/searchSlice'
 import './Header.css'
 import ContentLoader from 'react-content-loader'
@@ -23,6 +23,7 @@ export default function Header() {
 	const searchInput = React.useRef()
 	const inputRef = React.useRef()
 	const dispatch = useDispatch()
+	const location = useLocation()
 	const loading = (
 		<ContentLoader
 			speed={2}
@@ -85,6 +86,7 @@ export default function Header() {
 		}, 800),
 		[]
 	)
+	console.log(searchData)
 	const changeInput = event => {
 		setValueText(event.target.value)
 		searchFetch(event.target.value)
@@ -94,6 +96,9 @@ export default function Header() {
 			dispatch(clearData())
 		}
 	}, [valueText])
+	React.useEffect(() => {
+		setIsSearch(false)
+	}, [location.pathname])
 	React.useEffect(() => {
 		if (!isSearch) {
 			setValueText('')
