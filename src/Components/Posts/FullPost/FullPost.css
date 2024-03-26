@@ -172,3 +172,12 @@
 	width: 20px;
 	height: 20px;
 }
+@media (max-width: 1050px) {
+	header {
+		width: 850px;
+	}
+	.FullPost {
+		width: 850px;
+		flex-direction: column;
+	}
+}

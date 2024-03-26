@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const config = {
 	headers: {
-		'X-API-KEY': 'AFD6JZ0-9J6MPZF-J69DAAS-WJ9VPMC',
+		'X-API-KEY': 'ZWT7ATS-NKE41A1-PFVW9W8-QJSSY2D',
 		'Access-Control-Allow-Origin': '*',
 	},
 }

@@ -451,7 +451,7 @@
 	.Main-new-title h2 {
 		font-size: 22px;
 	}
-	.Main-new-title-next p {
+	.Main-new-title-next a {
 		font-size: 15px;
 	}
 	.Main-new-title-next svg {
@@ -464,7 +464,7 @@
 	.Main-best-title h2 {
 		font-size: 22px;
 	}
-	.Main-best-title-next p {
+	.Main-best-title-next a {
 		font-size: 15px;
 	}
 	.Main-best-title-next svg {
@@ -477,7 +477,7 @@
 	.Main-serials-title h2 {
 		font-size: 22px;
 	}
-	.Main-serials-title-next p {
+	.Main-serials-title-next a {
 		font-size: 15px;
 	}
 	.Main-serials-title-next svg {
@@ -502,7 +502,7 @@
 	.Main-new-title h2 {
 		font-size: 18px;
 	}
-	.Main-new-title-next p {
+	.Main-new-title-next a {
 		font-size: 12px;
 	}
 	.Main-new-title-next svg {
@@ -515,7 +515,7 @@
 	.Main-best-title h2 {
 		font-size: 18px;
 	}
-	.Main-best-title-next p {
+	.Main-best-title-next a {
 		font-size: 12px;
 	}
 	.Main-best-title-next svg {
@@ -528,7 +528,7 @@
 	.Main-serials-title h2 {
 		font-size: 18px;
 	}
-	.Main-serials-title-next p {
+	.Main-serials-title-next a {
 		font-size: 12px;
 	}
 	.Main-serials-title-next svg {

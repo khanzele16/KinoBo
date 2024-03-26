@@ -92,7 +92,7 @@ export default function Main() {
 				<div className='Main-new-title'>
 					<h2>Новинки</h2>
 					<div className='Main-new-title-next'>
-						<NavLink to='http://localhost:3000/cinema/films?sort=всё&category=rating&page=1'>
+						<NavLink to='/cinema/films?sort=всё&category=date&page=1'>
 							Открыть полностью
 						</NavLink>
 						<svg
@@ -145,7 +145,7 @@ export default function Main() {
 				<div className='Main-best-title'>
 					<h2>Лучшее</h2>
 					<div className='Main-best-title-next'>
-						<NavLink to='http://localhost:3000/cinema/films?sort=всё&category=rating&page=1'>
+						<NavLink to='/cinema/films?sort=всё&category=rating&page=1'>
 							Открыть полностью
 						</NavLink>
 						<svg
