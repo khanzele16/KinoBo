@@ -8,9 +8,9 @@ const Preview = props => {
 				<img
 					id='preview-img'
 					src={
-						!props.poster.previewUrl
+						!props.poster?.previewUrl
 							? 'https://i.ibb.co/LY8zffQ/kino.jpg'
-							: props.poster.previewUrl
+							: props.poster?.previewUrl
 					}
 					alt=''
 				/>
